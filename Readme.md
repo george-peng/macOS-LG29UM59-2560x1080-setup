@@ -1,5 +1,5 @@
 # MacOS Catalina 
-##              Ultrawide monitor 2560 x 1080 setup (LG U29UM59)
+##              Ultrawide monitor 2560 x 1080 setup (LG 29UM59)
 
 Do with your own risk , not responsible for any damage to your device.
 
