@@ -48,10 +48,7 @@ Output:
 dentify at the end of the line your DisplayVendorId as 10ac and your DisplayProductID as d06e and note these values. 
 
 
-### 4.
-
-Download DisplayProductID-59f1.plist in this repo.
-
+### 4. Download DisplayProductID-59f1.plist in this repo.
 
 
 ### 5. Copy DisplayProductID-59f1 to /System/.. 
