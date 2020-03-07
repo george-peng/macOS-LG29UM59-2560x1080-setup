@@ -3,9 +3,12 @@
 
 Do with your own risk , not responsible for any damage to your device.
 
+If you do not want to deal with the hassle and the risk of messing up your system. SwitchResX is good tool for this.
 
-Please see below links for more detail.
+
 ## Reference:
+
+Credits to all the people that figured out this hack in the links below . 
 
 https://www.tonymacx86.com/threads/lg-ultrawide-29um57-p.179861/#post-1373704
 https://www.tonymacx86.com/threads/adding-using-hidpi-custom-resolutions.133254/page-57
@@ -25,11 +28,11 @@ https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generat
 ```
 csrutil disable; reboot
 ```
-Check status after reboot.
+
+Check status after reboot. You should see " System Integrity Protection status: disabled."
 
 ```
 csrutil status
-
 ```
 
 ### 2. Enable HiDPI Mode
@@ -73,5 +76,6 @@ sudo cp ~/Downloads/DisplayProductID-59f1.plist /System/Library/Displays/Content
 
 ```
 csrutil enable
-
 ```
+
+### 8. Enjoy
