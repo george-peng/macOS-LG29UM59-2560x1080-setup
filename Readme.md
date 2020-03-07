@@ -3,6 +3,8 @@
 
 Do with your own risk , not responsible for any damage to your device.
 
+
+Please see below links for more detail.
 ## Reference:
 
 https://www.tonymacx86.com/threads/lg-ultrawide-29um57-p.179861/#post-1373704
@@ -43,10 +45,11 @@ ioreg -lw0 | grep IODisplayPrefsKey
 Output:
 ```
 "IODisplayPrefsKey" = "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@0/display0/AppleBacklightDisplay-610-a019"
-"IODisplayPrefsKey" = "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@2/display0/AppleDisplay-10ac-d06e"
+"IODisplayPrefsKey" = "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@2/display0/AppleDisplay-1e6d-59f1"
 ```
-dentify at the end of the line your DisplayVendorId as 10ac and your DisplayProductID as d06e and note these values. 
+AppleDisplay-1e6d-59f1 <-- LG29UM59 that we are looking to change.
 
+Nothing needed to be done from this step if you can find "AppleDisplay-1e6d-59f1" from your output screen. Else , the setup below might not work for you.
 
 ### 4. Download DisplayProductID-59f1.plist in this repo.
 
@@ -57,11 +60,16 @@ On Mac OS Catalina systems, the /System/ folder is mounted read-only, so you may
 ```
 sudo mount -uw /
 ```
+
+Please back up the original file beofore you copy.
+
 ```
 sudo cp ~/Downloads/DisplayProductID-59f1.plist /System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID-1e6d/DisplayProductID-59f1
 ```
 
-### 6.Enable System Integrity Protection
+### 6. Restart and Verify the new screen resolution.
+
+### 7.Enable System Integrity Protection
 
 ```
 csrutil enable
